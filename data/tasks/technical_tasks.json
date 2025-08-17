@@ -1,0 +1,52 @@
+[
+  {
+    "task_id": "tech_001",
+    "category": "technical",
+    "subcategory": "debugging",
+    "description": "Debug Python code with logical error",
+    "prompt": "This function should find all prime numbers up to n, but it's returning incorrect results. Fix it:\n\ndef find_primes(n):\n    primes = []\n    for num in range(2, n):\n        is_prime = True\n        for i in range(2, num):\n            if num % i == 0:\n                is_prime = False\n        if is_prime:\n            primes.append(num)\n    return primes\n\nFor n=20, it returns [2, 3, 5, 7, 11, 13, 17, 19] but it's very slow for large n. What's wrong and how can we optimize it?",
+    "expected_capabilities": ["code_analysis", "optimization", "algorithm_knowledge"],
+    "difficulty": "medium",
+    "multi_turn": false,
+    "evaluation_criteria": {
+      "technical_accuracy": 0.9,
+      "completion": 0.8,
+      "specificity": 0.8
+    }
+  },
+  {
+    "task_id": "tech_002",
+    "category": "technical",
+    "subcategory": "system_design",
+    "description": "Design scalable system architecture",
+    "prompt": "Design a URL shortening service (like bit.ly) that needs to handle 100 million requests per day. Requirements: 1) Generate short URLs from long URLs, 2) Redirect short URLs to original URLs with <100ms latency, 3) Analytics on click counts, 4) Custom aliases option, 5) URL expiration after 2 years. Describe the architecture, database schema, and how you'd handle scale.",
+    "expected_capabilities": ["system_architecture", "database_design", "scalability_patterns"],
+    "difficulty": "hard",
+    "multi_turn": false,
+    "context": {
+      "scale": "100M requests/day",
+      "latency_requirement": "100ms",
+      "features": ["shortening", "redirection", "analytics", "custom_aliases", "expiration"]
+    },
+    "evaluation_criteria": {
+      "technical_accuracy": 0.9,
+      "completion": 0.9,
+      "specificity": 0.8
+    }
+  },
+  {
+    "task_id": "tech_003",
+    "category": "technical",
+    "subcategory": "data_analysis",
+    "description": "SQL query optimization",
+    "prompt": "This query is running slowly on a table with 10 million rows:\n\nSELECT u.name, COUNT(o.id) as order_count, SUM(o.total) as total_spent\nFROM users u\nLEFT JOIN orders o ON u.id = o.user_id\nWHERE o.created_at > '2023-01-01'\nGROUP BY u.id, u.name\nHAVING COUNT(o.id) > 5\nORDER BY total_spent DESC;\n\nWhat's wrong with this query and how would you optimize it? Consider indexing strategies and query restructuring.",
+    "expected_capabilities": ["sql_optimization", "index_knowledge", "performance_analysis"],
+    "difficulty": "medium",
+    "multi_turn": false,
+    "evaluation_criteria": {
+      "technical_accuracy": 0.9,
+      "specificity": 0.8,
+      "completion": 0.8
+    }
+  }
+]

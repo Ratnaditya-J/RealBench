@@ -1,0 +1,53 @@
+[
+  {
+    "task_id": "creative_001",
+    "category": "creative",
+    "subcategory": "story_continuation",
+    "description": "Continue a story with consistent tone and plot",
+    "prompt": "Continue this story: 'The old lighthouse keeper noticed something unusual that morning. The beam, which had faithfully swept across the harbor for fifty years, was pointing straight up into the sky. More disturbing still, it seemed to be writing messages in the clouds—messages only he could read.'",
+    "expected_capabilities": ["narrative_consistency", "creativity", "atmosphere_maintenance"],
+    "difficulty": "medium",
+    "multi_turn": false,
+    "evaluation_criteria": {
+      "creativity": 0.8,
+      "coherence": 0.8,
+      "response_length": 0.7
+    }
+  },
+  {
+    "task_id": "creative_002",
+    "category": "creative",
+    "subcategory": "marketing_copy",
+    "description": "Write product description for innovative product",
+    "prompt": "Write a compelling product description for 'SleepWave': a smart pillow that adjusts firmness throughout the night based on your sleep position and sleep phase, includes white noise generation, and gradually wakes you during light sleep. Target audience: professionals aged 30-45 who value both technology and wellness. Maximum 150 words.",
+    "expected_capabilities": ["persuasive_writing", "benefit_highlighting", "audience_targeting"],
+    "difficulty": "medium",
+    "multi_turn": false,
+    "context": {
+      "product": "SleepWave smart pillow",
+      "features": ["adjustable firmness", "sleep tracking", "white noise", "smart alarm"],
+      "target_audience": "professionals 30-45",
+      "max_words": 150
+    },
+    "evaluation_criteria": {
+      "completion": 0.9,
+      "creativity": 0.7,
+      "response_length": 0.8
+    }
+  },
+  {
+    "task_id": "creative_003",
+    "category": "creative",
+    "subcategory": "creative_problem_solving",
+    "description": "Design unique solution to everyday problem",
+    "prompt": "A local library wants to encourage teenagers (13-18) to visit more often, but traditional methods (reading programs, study spaces) haven't worked. The library has a $5,000 budget and one empty room (500 sq ft). Propose 3 innovative ideas that would genuinely appeal to modern teenagers while still maintaining the library's educational mission.",
+    "expected_capabilities": ["innovative_thinking", "audience_understanding", "practical_constraints"],
+    "difficulty": "hard",
+    "multi_turn": false,
+    "evaluation_criteria": {
+      "creativity": 0.9,
+      "specificity": 0.7,
+      "completion": 0.8
+    }
+  }
+]

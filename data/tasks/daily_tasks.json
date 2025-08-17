@@ -1,0 +1,54 @@
+[
+  {
+    "task_id": "daily_001",
+    "category": "daily",
+    "subcategory": "recipe_adaptation",
+    "description": "Adapt a recipe for dietary restrictions",
+    "prompt": "I have a recipe for chocolate chip cookies that calls for: 2 cups flour, 1 cup butter, 1 cup sugar, 2 eggs, 1 tsp vanilla, 2 cups chocolate chips. I need to make this recipe vegan and gluten-free. What substitutions should I make, and will it affect the baking time or temperature (currently 350°F for 12 minutes)?",
+    "expected_capabilities": ["substitution_knowledge", "cooking_understanding", "practical_advice"],
+    "difficulty": "medium",
+    "multi_turn": false,
+    "evaluation_criteria": {
+      "completion": 0.8,
+      "specificity": 0.7,
+      "coherence": 0.8
+    }
+  },
+  {
+    "task_id": "daily_002",
+    "category": "daily",
+    "subcategory": "travel_planning",
+    "description": "Plan a day trip with constraints",
+    "prompt": "I'm in San Francisco with my family (2 adults, 2 kids ages 8 and 12) and we have one free day. Budget is $300 total. Kids love science but get bored in art museums. We don't have a car. What's a good itinerary for the day including transportation, activities, and meals?",
+    "expected_capabilities": ["budget_awareness", "family_appropriate", "logistics_planning"],
+    "difficulty": "hard",
+    "multi_turn": false,
+    "context": {
+      "location": "San Francisco",
+      "budget": 300,
+      "group": "2 adults, 2 kids (8, 12)",
+      "interests": "science",
+      "constraints": "no car"
+    },
+    "evaluation_criteria": {
+      "completion": 0.9,
+      "specificity": 0.8,
+      "response_length": 0.7
+    }
+  },
+  {
+    "task_id": "daily_003",
+    "category": "daily",
+    "subcategory": "personal_finance",
+    "description": "Advice on budget allocation",
+    "prompt": "I make $4,500/month after taxes. My fixed expenses are: rent $1,800, car payment $350, insurance $200, utilities $150. I'm trying to save for a house down payment and also pay off $8,000 in credit card debt (18% APR). How should I allocate my remaining income?",
+    "expected_capabilities": ["financial_planning", "prioritization", "practical_math"],
+    "difficulty": "medium",
+    "multi_turn": false,
+    "evaluation_criteria": {
+      "completion": 0.8,
+      "specificity": 0.8,
+      "coherence": 0.7
+    }
+  }
+]

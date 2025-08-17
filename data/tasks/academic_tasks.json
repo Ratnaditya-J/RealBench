@@ -1,0 +1,56 @@
+[
+  {
+    "task_id": "academic_001",
+    "category": "academic",
+    "subcategory": "concept_explanation",
+    "description": "Explain complex concept at appropriate level",
+    "prompt": "Explain the concept of quantum entanglement to a high school student who has just learned basic physics (knows about atoms, energy, waves). Use an analogy and explain why Einstein called it 'spooky action at a distance'.",
+    "expected_capabilities": ["concept_simplification", "analogy_creation", "level_appropriate"],
+    "difficulty": "medium",
+    "multi_turn": false,
+    "context": {
+      "audience_level": "high_school",
+      "prior_knowledge": ["basic physics", "atoms", "energy", "waves"]
+    },
+    "evaluation_criteria": {
+      "completion": 0.8,
+      "coherence": 0.8,
+      "response_length": 0.7
+    }
+  },
+  {
+    "task_id": "academic_002",
+    "category": "academic",
+    "subcategory": "homework_help",
+    "description": "Guide through problem-solving without giving direct answer",
+    "prompt": "A student asks: 'I need help with this calculus problem: Find the area between the curves y = x² and y = 2x from x = 0 to x = 2. I know I need to integrate but I'm stuck.' Guide them through the solution process without directly solving it.",
+    "expected_capabilities": ["pedagogical_approach", "step_guidance", "conceptual_explanation"],
+    "difficulty": "medium",
+    "multi_turn": false,
+    "evaluation_criteria": {
+      "completion": 0.9,
+      "pedagogical_value": 0.8,
+      "specificity": 0.7
+    }
+  },
+  {
+    "task_id": "academic_003",
+    "category": "academic",
+    "subcategory": "research_synthesis",
+    "description": "Synthesize research findings into coherent summary",
+    "prompt": "Summarize the current scientific consensus on microplastics in human health. Address: 1) Main sources of human exposure, 2) What we know about health impacts, 3) What remains unknown, 4) Current research directions. Target audience: undergraduate biology students. Include level of certainty for each claim.",
+    "expected_capabilities": ["research_synthesis", "scientific_accuracy", "uncertainty_communication"],
+    "difficulty": "hard",
+    "multi_turn": false,
+    "context": {
+      "topic": "microplastics and human health",
+      "audience": "undergraduate biology students",
+      "requirements": ["sources", "health impacts", "unknowns", "research directions"]
+    },
+    "evaluation_criteria": {
+      "completion": 0.9,
+      "confidence_calibration": 0.8,
+      "coherence": 0.8
+    }
+  }
+]

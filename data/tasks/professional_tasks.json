@@ -1,0 +1,52 @@
+[
+  {
+    "task_id": "prof_001",
+    "category": "professional",
+    "subcategory": "email_composition",
+    "description": "Compose a follow-up email after a job interview",
+    "prompt": "You had a job interview yesterday for a Senior Software Engineer position at TechCorp. The interviewer was Sarah Johnson, the Engineering Manager. During the interview, you discussed your experience with microservices and she mentioned their upcoming migration project. Write a thank-you follow-up email.",
+    "expected_capabilities": ["email_formatting", "professional_tone", "context_awareness"],
+    "difficulty": "medium",
+    "multi_turn": false,
+    "context": {
+      "interviewer": "Sarah Johnson",
+      "position": "Senior Software Engineer",
+      "company": "TechCorp",
+      "key_discussion": "microservices migration"
+    },
+    "evaluation_criteria": {
+      "completion": 0.8,
+      "professionalism": 0.7,
+      "specificity": 0.6
+    }
+  },
+  {
+    "task_id": "prof_002",
+    "category": "professional",
+    "subcategory": "report_analysis",
+    "description": "Analyze quarterly sales report and provide executive summary",
+    "prompt": "Here's our Q3 sales data: Total revenue: $2.3M (up 15% from Q2). Product A: $1.2M (52% of total), Product B: $800K (35%), Product C: $300K (13%). Customer acquisition cost increased by 20% but customer lifetime value increased by 35%. New markets entered: Germany and France (contributing 8% of total revenue). Customer churn rate decreased from 5% to 3.5%. Provide an executive summary with key insights and recommendations.",
+    "expected_capabilities": ["data_analysis", "summarization", "business_insights"],
+    "difficulty": "hard",
+    "multi_turn": false,
+    "evaluation_criteria": {
+      "completion": 0.9,
+      "specificity": 0.8,
+      "coherence": 0.8
+    }
+  },
+  {
+    "task_id": "prof_003",
+    "category": "professional",
+    "subcategory": "meeting_notes",
+    "description": "Convert meeting transcript to actionable items",
+    "prompt": "Meeting notes: Discussed new product launch timeline. John will handle marketing materials by Nov 15. Sarah needs budget approval for ad campaign ($50K). Dev team commits to beta release by Nov 1. Lisa raised concern about customer support training - needs 2 weeks lead time. Decision: Launch date set for Dec 1. Follow-up meeting scheduled for Oct 25. Convert these notes into a structured action items list with owners and deadlines.",
+    "expected_capabilities": ["information_extraction", "task_organization", "formatting"],
+    "difficulty": "medium",
+    "multi_turn": false,
+    "evaluation_criteria": {
+      "completion": 0.9,
+      "structure": 0.8
+    }
+  }
+]

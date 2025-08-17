@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  realbench-api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONPATH=/app
+    volumes:
+      - ./data:/app/data
+      - ./results:/app/results
+    command: python api_server.py
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  realbench-web:
+    build: .
+    ports:
+      - "8501:8501"
+    environment:
+      - PYTHONPATH=/app
+    volumes:
+      - ./data:/app/data
+      - ./results:/app/results
+    command: streamlit run web_app.py --server.port=8501 --server.address=0.0.0.0
+    depends_on:
+      - realbench-api
+
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - realbench-api
+      - realbench-web
