@@ -6,7 +6,7 @@ RealBench addresses the critical gap in AI evaluation by testing models on pract
 ## 🔍 Problem Statement
 Current AI benchmarks fail to capture real-world usage patterns. Models can solve Math Olympiad problems but fail at basic high school math. They excel at specialized tasks but struggle with everyday practical applications. RealBench bridges this gap.
 
-## 📊 Benchmark Categories
+## Benchmark Categories
 
 ### 1. **RealBench-Professional** 
 *Workplace and business-oriented tasks*
@@ -88,7 +88,7 @@ Current AI benchmarks fail to capture real-world usage patterns. Models can solv
 - Tests for "I don't know" responses
 - Measures practical helpfulness
 
-## 📁 Project Structure
+## Project Structure
 ```
 RealBench/
 ├── README.md
@@ -114,7 +114,7 @@ RealBench/
 └── results/
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Installation
 ```bash
@@ -138,7 +138,7 @@ results = benchmark.run(
 benchmark.analyze(results)
 ```
 
-## 📈 Evaluation Metrics
+## Evaluation Metrics
 
 1. **Accuracy**: Correctness of responses
 2. **Consistency**: Stability across similar queries
@@ -148,13 +148,13 @@ benchmark.analyze(results)
 6. **Calibration**: Uncertainty expression
 7. **Efficiency**: Token usage optimization
 
-## 🤝 Contributing
+## Contributing
 We welcome contributions! See CONTRIBUTING.md for guidelines.
 
-## 📄 License
+## License
 MIT License
 
-## 🌟 Citation
+## Citation
 ```bibtex
 @misc{realbench2024,
   title={RealBench: A Practical Real-world Benchmark for Generative AI},
