@@ -4,7 +4,7 @@
 RealBench addresses the critical gap in AI evaluation by testing models on practical, real-world tasks that humans actually use AI for, emphasizing consistency, practical utility, and robust handling of edge cases.
 
 ## 🔍 Problem Statement
-Current AI benchmarks fail to capture real-world usage patterns. Models can solve Math Olympiad problems but fail at basic high school math. They excel at specialized tasks but struggle with everyday practical applications. RealBench bridges this gap.
+Current AI benchmarks fail to capture real-world usage patterns. Models can solve Math Olympiad problems but fail at basic high school math ([source](https://economictimes.indiatimes.com/tech/artificial-intelligence/high-school-maths-trumps-olympiad-gold-medalist-ai-models-google-deepmind-ceo-answers-why/articleshow/123286889.cms?from=mdr)). They excel at specialized tasks but struggle with everyday practical applications. RealBench bridges this gap.
 
 ## Benchmark Categories
 
