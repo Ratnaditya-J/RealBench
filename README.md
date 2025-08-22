@@ -1,9 +1,9 @@
 # RealBench: Real-world Benchmark for Generative AI
 
-## 🎯 Mission
+## Mission
 RealBench addresses the critical gap in AI evaluation by testing models on practical, real-world tasks that humans actually use AI for, emphasizing consistency, practical utility, and robust handling of edge cases.
 
-## 🔍 Problem Statement
+## Problem Statement
 Current AI benchmarks fail to capture real-world usage patterns. Models can solve Math Olympiad problems but fail at basic high school math ([source](https://economictimes.indiatimes.com/tech/artificial-intelligence/high-school-maths-trumps-olympiad-gold-medalist-ai-models-google-deepmind-ceo-answers-why/articleshow/123286889.cms?from=mdr)). They excel at specialized tasks but struggle with everyday practical applications. RealBench bridges this gap.
 
 ## Benchmark Categories
@@ -68,7 +68,7 @@ Current AI benchmarks fail to capture real-world usage patterns. Models can solv
 - Medical disclaimer awareness
 - Legal limitation acknowledgment
 
-## 🎪 Key Features
+## Key Features
 
 ### Consistency Testing
 - Same concept tested across multiple difficulty levels
